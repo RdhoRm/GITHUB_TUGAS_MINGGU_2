@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8b6464;
+    color: #ac3333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    background-color: #8a6c6c;
+    border-bottom: 1px solid #333;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #8a6c6c;
+    transition: color 0.2s;
+}
+
+hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 70vh;
+    padding: 60px 40px;
+    max-width: 100px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+hero-content {
+    flex: 1;
+
+}
+
+greeting {
+    font-size: 2rem;
+    color: #2a169b; 
+    margin-bottom: 20px;
+}
+
+hero-title {
+    font-size: 13px;
+    color: #b80d6b;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+hero-quote {
+    border-left: 4px solid #0e8bbd;
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+hero-quote cite {
+    display: block;
+    font-style: normal;
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 8px;
+}
+
+hero-image {
+    flex-shrink: 0;
+}
+
+profile-img {
+    width: 50px;
+    height: 60px;
+    object-fit: cover;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+font-size: 14px;
+}
+showcase-section {
+    padding: 60px 40px;
+}
+showcase-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+showcase-title {
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+showcase-grid {
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+showcase-card {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #0e8bbd;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+}

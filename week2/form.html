@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Praktikan</title>
+    <!-- Menghubungkan ke file CSS eksternal yang sudah kita buat -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+            <h2>FORMULIR PENDAFTARAN PRAKTIKAN</h2>
+            
+            <form action="table.html" method="GET">
+                <table class="form-table">
+                    <tr>
+                        <td>NIM</td>
+                        <td>:</td>
+                        <td><input type="text" name="nim" id="nim" value="103082400026" readonly class="form-input readonly-input"></td>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td>:</td>
+                        <td><input type="text" name="username" id="username" value="Ridho Ramadhan" disabled class="form-input readonly-input"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><input type="email" name="email" id="email" required class="form-input"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>:</td>
+                        <td><input type="password" name="password" id="password" required class="form-input"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <label><input type="radio" name="gender" value="Laki-Laki"> Laki-Laki</label>
+                            <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Minat</td>
+                        <td>:</td>
+                        <td class="checkbox-group">
+                            <label><input type="checkbox" name="minat[]" value="Renang"> Renang</label>
+                            <label><input type="checkbox" name="minat[]" value="Bersepeda"> Bersepeda</label>
+                            <label><input type="checkbox" name="minat[]" value="Berlari"> Berlari</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jenjang Pendidikan</td>
+                        <td>:</td>
+                        <td>
+                            <select name="pendidikan" class="form-input">
+                                <option value="" selected>---PILIH---</option>
+                                <option value="D3">D3</option>
+                                <option value="S1">S1</option>
+                                <option value="S2">S2</option>
+                                <option value="S3">S3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Upload Foto</td>
+                        <td>:</td>
+                        <td><input type="file" name="foto" class="file-input"></td>
+                    </tr>
+                    <tr>
+                        <td>Harapan</td>
+                        <td>:</td>
+                        <td><textarea name="harapan" rows="5" class="form-input"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="btn-group">
+                            <button type="button" class="btn btn-cancel">Cancel</button>
+                            <button type="submit" class="btn btn-submit">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
